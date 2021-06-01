@@ -45,6 +45,7 @@ patch Configurations/10-main.conf < ../patch-conf.patch
 build_for ios64sim-cross x86_64 SIM || exit 2
 build_for ios-cross armv7s IOS || exit 4
 build_for ios64-cross arm64 IOS || exit 5
+build_for ios64sim-cross arm64 SIM || exit 5
 
 pack_for ssl || exit 6
 pack_for crypto || exit 7
